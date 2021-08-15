@@ -1,0 +1,713 @@
+@font-face {
+  src: url('../Fonts/NeoSansArabic.woff');
+  font-family: 'Neo Sans Arabic';
+}
+@font-face {
+  src: url('../Fonts/Inter-ExtraBold.ttf');
+  font-family: 'MyInter';
+}
+@font-face {
+  src: url('../Fonts/Inter-Regular.ttf');
+  font-family: 'InterR';
+}
+.App {
+  text-align: center;
+}
+h1 {
+  color: gray;
+}
+h2 {
+  font-size: 0.8em;
+}
+.PropName {
+  font-weight: bold;
+  color: #6264a7;
+}
+.Logo {
+  font-size: 45pt;
+  color: #6264a7;
+}
+.Error {
+  color: red;
+}
+.MainContainer {
+  height: 950px;
+
+  background-color: #e5e5e5;
+}
+.ProfileImage {
+  border-radius: 60px;
+  border-width: 1px;
+  margin-left: 42px;
+  margin-top: 45px;
+  width: 66px;
+  height: 66px;
+  border-color: #ffffff;
+  border-style: solid;
+}
+.UserName {
+  font-size: 20px;
+  color: #ffffff;
+  margin-left: 131px;
+  position: absolute;
+  margin-top: -67px;
+  font-family: Neo Sans Arabic;
+}
+.Motivation {
+  position: absolute;
+  margin-left: 129.5px;
+  margin-top: -30px;
+  font-family: Neo Sans Arabic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.56);
+}
+.Cloud {
+  margin-left: 73%;
+  margin-top: -170px;
+}
+.Tempreture {
+  width: 42px;
+  height: 38px;
+  display: flex;
+  align-self: flex-end;
+  margin-left: 88%;
+  margin-top: -20px;
+  font-family: Neo Sans Arabic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  color: rgba(255, 255, 255, 0.56);
+}
+.DataContainer {
+  width: 600px;
+  height: 80px;
+  position: absolute;
+  right: 22px;
+  margin-top: 242px;
+  height: 308px;
+  display: flex;
+}
+.charts {
+  height: 98%;
+  width: 280px;
+}
+.Secondchart {
+  height: 98%;
+  width: 280px;
+}
+.together {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.FileInfo {
+  height: 350px;
+  width: 260px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 60px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.PlannerInfo {
+  height: 350px;
+  width: 260px;
+  background-color: cornsilk;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 60px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}
+.TitleText {
+  font-family: MyInter;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+  margin-left: 7px;
+  padding-top: 6px;
+}
+.TaskIcon {
+  width: 25px;
+  height: 25px;
+  margin-top: 29.5px;
+  margin-left: 18px;
+}
+.SingleTaskButton {
+  background-color: transparent;
+  outline: none;
+  border-width: 0px;
+  height: 0%;
+  margin-left: -7px;
+}
+.FilesIcon {
+  width: 22.67px;
+  height: 28.33px;
+  margin-top: 28.38px;
+  margin-left: 18px;
+}
+.Tasks {
+  align-self: center;
+  justify-content: flex-start;
+  position: absolute;
+}
+.Files {
+  align-self: flex-end;
+  position: absolute;
+  top: 70px;
+  height: 238px;
+  width: 259px;
+}
+.SingleTask {
+  border-bottom: 1px solid;
+  margin-left: 18px;
+  margin-top: -8px;
+  margin-right: 18px;
+  border-color: #eeeeee;
+
+  height: 47px;
+}
+.SingleFile {
+  border-bottom: 1px solid;
+  margin-left: 18px;
+  margin-top: -8px;
+  margin-right: 18px;
+  border-color: #eeeeee;
+
+  height: 47px;
+}
+
+.TaskTitle {
+  font-family: InterR;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4d5a69;
+}
+
+.FileTitle {
+  font-family: InterR;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4d5a69;
+}
+.CheckList {
+  font-family: InterR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 12px;
+  margin-left: 162px;
+  color: #818a94;
+}
+.GameCardContainer {
+  width: 640px;
+  height: 292px;
+  border-radius: 10px;
+}
+.gameContainer {
+  width: 340px;
+  margin-left: -20;
+}
+.ColumnSize {
+  width: 640px;
+}
+.olumnSize {
+  width: 140px;
+  height: 120px;
+  background-color: red;
+}
+.MainScreenGame {
+  position: absolute;
+  top: 300px;
+  margin-left: 30px;
+}
+.Plan {
+  font-family: InterR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 12px;
+  color: #818a94;
+}
+.Team {
+  font-family: InterR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 12px;
+  margin-top: -1px;
+  color: #818a94;
+}
+.TasksDetailsContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: -20px;
+}
+.NextButtonContainerTasks {
+  width: 48.95px;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  background-color: transparent;
+
+  bottom: -60px;
+  margin-left: 180px;
+}
+.NextButtonContainer {
+  width: 48.95px;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  background-color: transparent;
+
+  bottom: 18px;
+  margin-left: 180px;
+}
+.BackButton {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 100%;
+  width: 50%;
+  background-color: red;
+  border: 1px solid;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-color: #eeeeee;
+  outline: none;
+}
+
+.BackButtonFixed {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 1px solid;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-color: #eeeeee;
+  background-color: transparent;
+  outline: none;
+  height: 100%;
+  width: 50%;
+}
+.NextButton {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 100%;
+  width: 50%;
+  background-color: transparent;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  border-color: #eeeeee;
+  border-left-color: white;
+  outline: none;
+}
+.StoriesContainer {
+  width: 425px;
+  height: 130px;
+  margin-top: 20px;
+  right: 20px;
+  width: 574px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.StoryButton {
+  height: 104px;
+  width: 90px;
+  margin-right: 25px;
+  border-radius: 10px;
+  outline: none;
+  background-color: transparent;
+  border-width: 0px;
+}
+
+.OpenedStoryButton {
+  height: 104px;
+  width: 90px;
+  margin-right: 15px;
+  border-radius: 10px;
+  outline: none;
+  background-color: transparent;
+  border-width: 0px;
+  filter: brightness(0.5);
+}
+
+.StoryContainer {
+  width: 600;
+  height: 700;
+  position: absolute;
+  background-color: black;
+}
+
+.StoryStyle {
+  // padding-left: 500px;
+}
+
+.StoryPageContainer {
+  // margin-right: -44px;
+}
+.AddStoryButton {
+  height: 104px;
+  width: 90px;
+  margin-right: 35px;
+  border-radius: 10px;
+  border-width: 1px;
+  background-color: transparent;
+  margin-bottom: 20px;
+  outline: none;
+}
+.AddStoryImage {
+  height: 100px;
+  width: 50px;
+}
+.SplashScreen {
+  padding-top: 1px;
+  background-color: #e5e5e5;
+  padding-bottom: 30%;
+}
+.StoryImage {
+  width: 131%;
+  height: 100%;
+  padding-right: 16px;
+  margin-left: -4px;
+}
+.CloseImage {
+  width: 24px;
+  height: 24px;
+}
+.CloseBbutton {
+  width: 24px;
+  height: 24px;
+  outline: none;
+  background-color: transparent;
+  border-width: 0px;
+  margin-left: 94.2%;
+  margin-bottom: 5px;
+}
+.SingleAdd {
+  width: 225px;
+  height: 263px;
+  margin-left: 35px;
+  background: #ffffff;
+  border: 1px solid;
+  border-color: #eeeeee;
+  background: #ffffff;
+
+  border-radius: 20px;
+}
+.AddDetails {
+  height: 90px;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.AddsContainer {
+  left: 19px;
+  top: 640px;
+  display: flex;
+
+  flex-direction: row;
+}
+
+.DetailsText {
+  position: absolute;
+  width: 188px;
+  height: 31px;
+
+  font-family: Neo Sans Arabic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  align-self: flex-end;
+  margin-right: 15px;
+
+  color: #000000;
+}
+.NewsImage {
+  width: 225px;
+  height: 172px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.BirthdayAlert {
+  position: absolute;
+}
+.BirthdayAlertCard {
+  width: 441px;
+  height: 628px;
+  display: flex;
+  margin-top: 20%;
+  align-self: center;
+
+  background: #f9f9f9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.BirthdayTiltle {
+  width: 373px;
+  height: 88px;
+  margin-left: 10%;
+  margin-top: 50px;
+
+  font-family: Neo Sans Arabic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+
+  color: #00a0d7;
+}
+
+.BirthdayBody {
+  width: 303px;
+  height: 40px;
+  margin-left: 18%;
+
+  font-family: Neo Sans Arabic;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #000000;
+}
+.BirdayImage {
+  margin-left: 12%;
+}
+.BirthdayCloseButton {
+  background-color: transparent;
+  border-width: 0px;
+  width: 25px;
+  height: 25px;
+  margin-top: 21px;
+  margin-left: 385px;
+}
+.CloseButtonImage {
+  width: 22px;
+  height: 22px;
+}
+.footer {
+  height: 40px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.SocialMediaButton {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-width: 0px;
+  margin-right: 10px;
+  outline: none;
+}
+.QrCodeImage {
+  width: 17px;
+  height: 17px;
+}
+.QrCodeBbutton {
+  /* width: 24px;
+  height: 24px; */
+  background: transparent;
+  border-radius: 10px;
+  border-width: 1.5px;
+  margin-top: 10px;
+  margin-left: 96.2%;
+  position: absolute;
+}
+
+.SocialMediaContainer {
+  margin-left: 51px;
+  margin-bottom: 20px;
+}
+.SocialMediaIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.SplashMainIcon {
+  width: 456px;
+  height: 455px;
+  border-radius: 60px;
+  border-width: 50px;
+  border-color: red;
+}
+.SplashImageBorder {
+}
+.ProgressBarContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.SplashIconContainer {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.PaltelNewsContainer {
+}
+
+.AllNewsContainer {
+}
+.NextToEachotherContainer {
+  display: flex;
+  margin-left: 55px;
+  /* justify-content: space-evenly; */
+}
+
+.TechNewsContainer {
+  margin-left: 50px;
+}
+.TechNewsButton {
+  background: transparent;
+  border-width: 0px;
+  outline: transparent;
+}
+.Showing {
+  font-family: InterR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  position: absolute;
+  bottom: -70px;
+  left: 25px;
+  color: #818a94;
+}
+.ShowingContainer {
+}
+.ShowingFiles {
+  font-family: InterR;
+  font-style: normal;
+  position: absolute;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  margin-left: 29px;
+  margin-top: 29px;
+  bottom: 12px;
+
+  color: #818a94;
+}
+.PaltelNewsButton {
+  background: transparent;
+  border-width: 0px;
+  outline: transparent;
+}
+.NewsHeaderActive {
+  font-family: Neo Sans Arabic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #464775;
+}
+
+.NewsHeaderNotActive {
+  font-family: Neo Sans Arabic;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #a5a5a5;
+}
+.Links {
+  text-decoration: none;
+}
+
+.SplashScreenImageContainer2 {
+  position: absolute;
+  left: 95px;
+  top: 180px;
+}
+
+.SplashScreenImageContainer1 {
+  position: absolute;
+  left: 282px;
+  top: 47px;
+}
+
+.SplashScreenImageContainer3 {
+  position: absolute;
+  top: 480px;
+  left: 225px;
+}
+
+.SplashScreenImageContainer4 {
+  position: absolute;
+  left: 293px;
+  top: 285px;
+}
+.SplashScreenImageContainer5 {
+  position: absolute;
+  right: 355px;
+  top: 480px;
+}
+.SplashScreenImageContainer6 {
+  position: absolute;
+  right: 155px;
+  top: 180px;
+}
+
+.SplashScreenImageContainer7 {
+  position: absolute;
+  right: 325px;
+}
+
+.SplashScreenImageContainer8 {
+  position: absolute;
+  right: 305px;
+  top: 330px;
+}
+.SplashScreenImageContainer9 {
+  position: absolute;
+  right: 120px;
+  top: 440px;
+}
+.SplashScreenImageContainer10 {
+  position: absolute;
+  top: 350px;
+  left: 100px;
+}
+.test {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.LeftMargin {
+  margin-left: -40;
+}
